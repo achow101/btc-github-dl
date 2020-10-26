@@ -1,0 +1,48 @@
+REPOS = {
+    "bitcoin": [
+        "bitcoin",
+        "bips",
+        "libbase58",
+        "libblkmaker",
+    ],
+    "bitcoin-core": [
+        "secp256k1",
+        "qa-assets",
+        "gui",
+        "bitcoincore.org",
+        "HWI",
+        "docs",
+        "bitcoin-devwiki",
+        "bitcoin-maintainer-tools",
+        "btcdeb",
+        "univalue",
+        "ctaes",
+        "leveldb",
+        "packaging",
+        "apple-sdk-tools",
+        "gitian.sigs",
+        "bitcoin-detached-sigs",
+        "bitcoin-acks",
+        "crc32c",
+    ],
+    "bitcoin-dot-org": [
+        "bitcoin.org",
+    ],
+    "spesmilo": [
+        "electrum",
+        "electrum-signatures",
+        "electrum-web",
+        "electrum-locale",
+        "electrum-docs",
+        "electrumx",
+    ],
+    "lightningnetwork": [
+        "lightning-rfc",
+        "lnd",
+        "lightning-onion",
+        "paper",
+    ],
+    "elementsproject": [
+        "lightning",
+    ],
+}
