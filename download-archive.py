@@ -43,3 +43,13 @@ for owner, repos in REPOS.items():
     for repo in repos:
         LOG.info(f"Downloading {owner}/{repo}")
         download_repo(ARCHIVE_REL_STR, api, owner, repo)
+
+# Commit the archive
+LOG.info("Adding archive to git repo")
+index = archive_repo.index
+index.add("*")
+c = index.commit("Periodic Update")
+
+# Push it
+LOG.info("Pushing git repo")
+archive_repo.remote().push()
