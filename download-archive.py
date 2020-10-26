@@ -40,6 +40,6 @@ except (InvalidGitRepositoryError, NoSuchPathError):
 # Use GitHub-DL to download every repo
 api = GitHubAPI(TOKENUSER, TOKEN)
 for owner, repos in REPOS.items():
-   for repo in repos:
-       LOG.info(f"Downloading {owner}/{repo}")
-       download_repo(ARCHIVE_REL_STR, api, owner, repo)
+    for repo in repos:
+        LOG.info(f"Downloading {owner}/{repo}")
+        download_repo(ARCHIVE_REL_STR, api, owner, repo)
