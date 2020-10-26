@@ -1,0 +1,3 @@
+[submodule "github_dl"]
+	path = github_dl
+	url = https://github.com/achow101/github-dl/
